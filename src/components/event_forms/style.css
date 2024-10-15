@@ -114,7 +114,7 @@
 }
 
 /* MEDIA QUERIES FOR SMALLER SCREENS (Phones) */
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .video-container {
     height: 80vh; /* Reduce video height for smaller screens */
   }
