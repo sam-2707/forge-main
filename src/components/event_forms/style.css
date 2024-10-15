@@ -110,31 +110,47 @@
   transform: scale(1.05); /* Slight scale up effect */
 }
 
-/* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
-@media (max-width: 768px) {
+/* MEDIA QUERIES FOR SMALLER SCREENS (Phones) */
+@media (max-width: 480px) {
   .video-container {
-    height: 50vh; /* Reduce video height on smaller screens */
+    height: 40vh; /* Further reduce the video height for smaller phones */
   }
 
   .event-heading1 {
-    font-size: 2em; /* Smaller font size for mobile */
+    font-size: 1.5em; /* Smaller font size for mobile */
   }
 
   .event-description {
-    font-size: 1.2em;
+    font-size: 1em; /* Adjust description font size */
   }
 
   .details-container {
-    flex-direction: column; /* Stack details vertically on smaller screens */
+    flex-direction: column; /* Stack details vertically */
     align-items: flex-start;
   }
 
   .detail-label, .detail-value {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 0.9rem; /* Further reduce font size for details */
   }
 
   .register-btn {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 8px 15px;
+    font-size: 12px; /* Adjust button size for mobile */
+  }
+}
+
+/* Improve vertical centering for mobile */
+@media (max-width: 768px) {
+  .video-overlay {
+    padding: 10px;
+    width: 90%; /* Ensure the overlay doesn't extend beyond the screen */
+  }
+
+  .event-description {
+    font-size: 1.1em; /* Smaller description font size */
+  }
+
+  .register-container {
+    margin-top: 15px;
   }
 }
