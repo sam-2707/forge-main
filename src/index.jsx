@@ -78,7 +78,7 @@ function Routee() {
             path="/freefire"
             element={
               <EventPage
-                eventName="FreeFire"
+                eventName="Free Fire"
                 eventDescription="Get ready for the ultimate battle royale experience! Join our FreeFire gaming tournament and compete against top players for a chance to win amazing prizes. With intense gameplay, adrenaline-pumping action, and skilled competitors, this event is not to be missed. Register now and enter the battlegrounds!"
                 entryFee="400/-"
                 eventVenue="Computer Science Labs - 5th floor, from 6:00 P.M."
