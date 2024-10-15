@@ -74,7 +74,7 @@ figure img {
 /* Media Queries for Mobile Responsiveness */
 
 /* Small screens (phones, < 600px) */
-@media (max-width: 600px) {
+@media (max-width: 428px) {
   .articles {
     flex-direction: column;
   }
