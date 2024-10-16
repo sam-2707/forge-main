@@ -17,33 +17,41 @@ function EventPage(props) {
         </div>
       </div>
 
-      {/* Event Details */}
-      <div className="event-details content1">
-        <div>
-          <span className="detail-label">Event Venue:</span>
-          <span className="detail-value">{props.eventVenue}</span>
-        </div>
-        <div>
-          <span className="detail-label">Entry Fee:</span>
-          <span className="detail-value">{props.entryFee}</span>
-        </div>
-        <div>
-          <span className="detail-label">Prize Pool:</span>
-          <span className="detail-value">{props.prizePool}</span>
-        </div>
-        <div>
-          <span className="detail-label">Date:</span>
-          <span className="detail-value">{props.eventDate}</span>
+      {/* Event Details and Poster Container */}
+      <div className="content1">
+        {/* Event Details */}
+        <div className="event-details">
+          <div>
+            <span className="detail-label">Event Venue:</span>
+            <span className="detail-value">{props.eventVenue}</span>
+          </div>
+          <div>
+            <span className="detail-label">Entry Fee:</span>
+            <span className="detail-value">{props.entryFee}</span>
+          </div>
+          <div>
+            <span className="detail-label">Prize Pool:</span>
+            <span className="detail-value">{props.prizePool}</span>
+          </div>
+          <div>
+            <span className="detail-label">Date:</span>
+            <span className="detail-value">{props.eventDate}</span>
+          </div>
+
+          {/* Register Button */}
+          <div className="register-container">
+            <button
+              className="register-btn"
+              onClick={() => (window.location.href = props.googleFormLink)}
+            >
+              Register Now
+            </button>
+          </div>
         </div>
 
-        {/* Register Button */}
-        <div className="register-container">
-          <button
-            className="register-btn"
-            onClick={() => (window.location.href = props.googleFormLink)}
-          >
-            Register Now
-          </button>
+        {/* Poster Section */}
+        <div className="poster-container">
+          <img src={props.posterImage} alt="Event Poster" type="pic/jpg" />
         </div>
       </div>
     </section>

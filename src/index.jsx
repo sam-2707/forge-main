@@ -35,6 +35,7 @@ function Routee() {
                 eventDate="19/10/2024 - 20/10/2024"
                 googleFormLink="https://forms.gle/DeKd7kWPbSQ3RPT58"
                 videoLink="/valo.mp4"  // Valorant form link
+                posterImage="\valo_poster.jpg"
               />
             }
           />
@@ -69,6 +70,7 @@ function Routee() {
                 eventDate="19/10/2024 - 20/10/2024"
                 googleFormLink="https://forms.gle/8oJfwdWny5Nn4JpB6"
                 videoLink="/pabg.mp4"  // BGMI form link
+                posterImage="\bgmi_poster0.jpg"
               />
             }
           />
@@ -101,7 +103,7 @@ function Routee() {
                 eventVenue="Krishna Hall - E-Block 1st floor. from 6:00 P.M."
                 prizePool="10000/-"
                 eventDate="19/10/2024 - 20/10/2024"
-                googleFormLink="https://forms.gle/HackathonGoogleFormLink"  // Hackathon form link
+                googleFormLink="https://forms.office.com/r/twzapcYeL7"  // Hackathon form link
               />
             }
           />

@@ -11,9 +11,9 @@ body {
 }
 
 .articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 20px; /* Add space between the columns */
 }
 
 .article-wrapper {
@@ -23,7 +23,6 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  width: 48%; /* For desktop */
 }
 
 .article-wrapper:hover {
@@ -74,13 +73,14 @@ figure img {
 /* Media Queries for Mobile Responsiveness */
 
 /* Small screens (phones, < 600px) */
+/* Small screens (phones, < 428px) */
 @media (max-width: 428px) {
   .articles {
-    flex-direction: column;
+    display: block; /* Stack articles one on top of the other */
   }
 
   .article-wrapper {
-    width: 100%; /* Full width on mobile */
+    width: 100%; /* Take full width on mobile */
     margin-bottom: 20px; /* Add spacing between articles */
   }
 
@@ -90,31 +90,33 @@ figure img {
   }
 
   .article-body {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 15px; /* Add padding for better readability */
   }
 
   .article-body h2 {
-    font-size: 18px; /* Adjust font size for readability on smaller screens */
+    font-size: 22px; /* Slightly larger font size for titles on mobile */
   }
 
   .article-body p {
-    font-size: 14px; /* Smaller text for mobile */
+    font-size: 16px; /* Larger text for better readability */
   }
 
   .read-more {
-    font-size: 16px; /* Adjust link size */
+    font-size: 18px; /* Adjust link size to match larger text */
   }
 
   .read-more svg {
-    width: 16px; /* Adjust icon size for mobile */
-    height: 16px;
+    width: 20px; /* Ensure icon scales accordingly */
+    height: 20px;
   }
 }
 
+
 /* Medium screens (tablets, < 768px) */
 @media (max-width: 768px) {
-  .article-wrapper {
-    width: 100%; /* Full width on tablets */
+  .articles {
+    grid-template-columns: repeat(2, 1fr); /* Display two columns on tablets */
+    gap: 20px;
   }
 
   .article-body h2 {

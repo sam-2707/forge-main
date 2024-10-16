@@ -1,7 +1,7 @@
 /* Container for the video background */
 .video-container {
   position: relative;
-  height: 60vh; /* Reduce the height for better visibility on smaller devices */
+  height: 60vh; /* Keeps the video height the same */
   overflow: hidden;
 }
 
@@ -14,9 +14,33 @@
 /* Content below the video */
 .content1 {
   background-color: #2e2e2e;
-  padding: 15px; /* Reduce padding for smaller screens */
+  display: flex; /* Flexbox to allow side-by-side layout */
+  justify-content: space-between;
+  padding: 15px;
   font-family: 'Rubik', sans-serif;
   color: #efefef;
+  align-items: center; /* Center the details and poster vertically */
+}
+
+/* Left-side event details */
+.event-details {
+  flex: 2; /* Takes up more space than the image */
+  padding: 15px;
+  font-size: 1.2em; /* Adjust font size */
+}
+
+/* Poster on the right side */
+.poster-container {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.poster-container img {
+  max-width: 100%;
+  height: auto; /* Ensures the image scales properly */
+  border-radius: 10px; /* Optional: round the corners of the image */
 }
 
 /* Overlay on top of the video */
@@ -27,19 +51,19 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
-  padding: 15px; /* Reduce padding */
+  padding: 15px;
   background-color: rgba(1, 0, 0, 0.6); /* Darker semi-transparent background */
   border-radius: 25px;
-  width: 80%; /* Ensure it doesn't extend too far */
+  width: 80%;
 }
 
 /* Event heading */
 .event-heading1 {
   color: #FF4654;
   font-family: "Play", sans-serif;
-  font-size: 2.5em; /* Adjust for better readability */
+  font-size: 2.5em; 
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Text shadow for contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   margin-bottom: 15px;
 }
 
@@ -47,26 +71,16 @@
 .event-description {
   color: #efefef;
   font-family: "Rubik", sans-serif;
-  font-size: 1.3em; /* Adjust font size */
-  font-weight: normal;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  font-size: 1.3em;
   line-height: 1.5;
 }
 
 /* Flex container for event details */
-.event-details {
+.details-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
-}
-
-/* Container for each row of details */
-.details-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 15px;
 }
 
 /* Labels for the event details */
@@ -76,7 +90,7 @@
   text-align: left;
   font-weight: bold;
   font-size: 1.1rem;
-  margin-right: 5px; /* Adjust margin */
+  margin-right: 5px;
 }
 
 /* Values for the event details */
@@ -90,7 +104,7 @@
 /* Container for the register button */
 .register-container {
   display: flex;
-  justify-content: center;
+  justify-content: bottom;
   margin-top: 15px;
 }
 
@@ -109,56 +123,34 @@
 
 /* Hover effect for register button */
 .register-btn:hover {
-  background-color: #ff6876; /* Lighter red on hover */
-  transform: scale(1.05); /* Slight scale up effect */
+  background-color: #ff6876;
+  transform: scale(1.05);
 }
 
-/* MEDIA QUERIES FOR SMALLER SCREENS (Phones) */
-@media (max-width: 480px) {
-  .video-container {
-    height: 80vh; /* Reduce video height for smaller screens */
+/* MEDIA QUERIES FOR SMALLER SCREENS */
+@media (max-width: 768px) {
+  .content1 {
+    flex-direction: column; /* Stack event details and poster vertically */
+    align-items: center;
   }
 
-  .video-overlay {
-    padding: 8px;
-    width: 90%; /* Ensure the overlay is not too wide */
-    font-size: 0.9em;
+  .poster-container {
+    margin-top: 20px; /* Add space between details and poster */
   }
 
   .event-heading1 {
-    font-size: 1.4em; /* Smaller font size for mobile */
+    font-size: 1.8em;
   }
 
   .event-description {
-    font-size: 1em; /* Adjust description font size */
+    font-size: 1.1em;
   }
-
-  .details-container {
-    flex-direction: column; /* Stack details vertically */
-    align-items: flex-start;
-  }
-
+  
   .detail-label, .detail-value {
-    font-size: 0.85rem; /* Reduce font size for details */
+    font-size: 0.9em;
   }
 
   .register-btn {
-    padding: 8px 12px;
-    font-size: 14px; /* Adjust button size */
-  }
-}
-
-@media (max-width: 768px) {
-  .video-overlay {
-    padding: 10px;
-    width: 85%; /* Ensure the overlay doesn't extend beyond the screen */
-  }
-
-  .event-description {
-    font-size: 1.1em; /* Smaller description font size */
-  }
-
-  .register-container {
-    margin-top: 15px;
+    font-size: 14px;
   }
 }
