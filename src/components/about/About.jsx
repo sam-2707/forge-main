@@ -14,7 +14,7 @@ export default function About() {
               Welcome to <span className="span-emp">GG!</span>, the ultimate
               gaming event that will take you on a journey of adventure,
               excitement, and pure gaming fun! Join us on{" "}
-              <span className="span-emp">October 19th and 20th</span> for two days
+              <span className="span-emp">November 08th and 09th</span> for two days
               of non-stop gaming fun, including Hallucinate, where you'll
               experience mind-bending VR gameplay, Rendezvous, a treasure hunt
               with a high-tech twist, Flash, a special movie screening of your
