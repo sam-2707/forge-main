@@ -27,7 +27,7 @@ function Routee() {
             path="/valorant"
             element={
               <EventPage
-                eventName="Valorant"
+                
                 eventDescription="Ready to put your skills to the test? Join our Valorant gaming tournament and compete with the best players in the game! With exciting prizes, thrilling matches, and fierce competition, this is the ultimate event for serious gamers. Register now and show us what you've got!"
                 entryFee="500/-"
                 eventVenue="AI Lab - 5th floor, from 6:00 P.M."
@@ -35,7 +35,8 @@ function Routee() {
                 eventDate="08/11/2024 - 09/11/2024"
                 googleFormLink="https://forms.gle/DeKd7kWPbSQ3RPT58"
                 videoLink="/valo.mp4"  // Valorant form link
-                posterImage="\valo_poster.jpg"
+                posterImage="\valo_final.jpg"
+                pngImage="\VALORANT_Jett_Type.jpg"
               />
             }
           />
@@ -45,7 +46,6 @@ function Routee() {
             path="/fifa"
             element={
               <EventPage
-                eventName="Fifa"
                 eventDescription="Are you ready to take your FIFA skills to the next level? Join our FIFA gaming tournament and compete against the best players in the game! With thrilling matches, intense gameplay, and exciting prizes, this is the ultimate event for soccer fans and gamers alike. Register now and show us your skills!"
                 entryFee="100/-"
                 eventVenue="Computer Science Lab - 5th floor, from 6:00 P.M."
@@ -53,6 +53,7 @@ function Routee() {
                 eventDate="08/11/2024 - 09/11/2024"
                 googleFormLink="https://forms.gle/HcXi26DXqbUzeKEo7" 
                 videoLink="/meh.mp4" // FIFA form link
+                pngImage="\fifa.jpg"
               />
             }
           />
@@ -71,6 +72,7 @@ function Routee() {
                 googleFormLink="https://forms.gle/8oJfwdWny5Nn4JpB6"
                 videoLink="/pabg.mp4"  // BGMI form link
                 posterImage="\bgmi_poster0.jpg"
+                pngImage="\pabg.jpg"
               />
             }
           />
@@ -88,6 +90,7 @@ function Routee() {
                 eventDate="08/11/2024 - 09/11/2024"
                 googleFormLink="https://docs.google.com/forms/d/e/1FAIpQLSfcKEf07sXtQ69F2l5LgBMBnrgXDEpRh0-zCUayxsh1BaCcGw/viewform?usp=sf_link" 
                 videoLink="/ff.mp4" // FreeFire form link
+                pngImage="\ff.jpg"
               />
             }
           />
@@ -103,7 +106,7 @@ function Routee() {
                 eventVenue="Krishna Hall - E-Block 1st floor. from 6:00 P.M."
                 prizePool="10000/-"
                 eventDate="08/11/2024 - 09/11/2024"
-                googleFormLink="https://forms.office.com/r/twzapcYeL7"  // Hackathon form link
+                googleFormLink="https://forms.office.com/r/twzapcYeL7 "  // Hackathon form link
               />
             }
           />
