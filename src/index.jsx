@@ -91,6 +91,7 @@ function Routee() {
                 googleFormLink="https://docs.google.com/forms/d/e/1FAIpQLSfcKEf07sXtQ69F2l5LgBMBnrgXDEpRh0-zCUayxsh1BaCcGw/viewform?usp=sf_link" 
                 videoLink="/ff.mp4" // FreeFire form link
                 pngImage="\ff.jpg"
+                posterImage="\ff_poster.jpg"
               />
             }
           />
