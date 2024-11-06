@@ -54,6 +54,7 @@ function Routee() {
                 googleFormLink="https://forms.gle/HcXi26DXqbUzeKEo7" 
                 videoLink="/meh.mp4" // FIFA form link
                 pngImage="\fifa.jpg"
+                posterImage="\fifa.jpeg"
               />
             }
           />
