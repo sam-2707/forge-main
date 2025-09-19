@@ -8,12 +8,16 @@ body {
 
 .about-page {
   padding: 20px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
   gap: 20px; /* Add space between the columns */
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .article-wrapper {
@@ -23,6 +27,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  max-width: 100%;
 }
 
 .article-wrapper:hover {
@@ -126,6 +131,41 @@ figure img {
   .article-body p {
     font-size: 15px;
   }
+}
+
+/* DASTAAN Tournament Title */
+.dastaan-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #00ff88;
+  margin: 20px 0 30px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid #00ff88;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 8px 25px rgba(0, 255, 136, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.dastaan-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
 
 /* DASTAAN Gaming Tournament Styles */
@@ -240,5 +280,21 @@ figure img {
   
   .dastaan-event .article-body h2 {
     font-size: 14px;
+  }
+  
+  .dastaan-title {
+    font-size: 20px;
+    margin: 15px 0 20px 0;
+    padding: 15px 10px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 428px) {
+  .dastaan-title {
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+    padding: 12px 8px;
+    letter-spacing: 0.5px;
   }
 }

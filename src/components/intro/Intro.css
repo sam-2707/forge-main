@@ -22,7 +22,8 @@
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
-  overflow: hidden;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .intro-start-box {
@@ -34,6 +35,8 @@
   justify-content: space-between;
   align-items: center;
   margin-block: 2rem;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 .intro-quote {
   font-weight: 600;

@@ -5,6 +5,9 @@ export default function EventsLanding() {
   return (
     <div className="about-page">
       <section className="articles">
+        {/* DASTAAN Gaming Tournament Title */}
+        <h2 className="dastaan-title">FORGE X DASTAAN GAMING TOURNAMENT</h2>
+        
         {/* New DASTAAN Gaming Tournament Events */}
         <article>
           <div className="article-wrapper dastaan-event">

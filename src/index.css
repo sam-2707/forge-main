@@ -8,20 +8,21 @@
   
 }
 
+/* Global overflow protection */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 :root {
   --font-tc: "Technor", sans-serif;
   --font-nn: "Nunito", sans-serif;
 }
-/* body {
-  background-color: #fff3e2;
-  background-color: #c7e9b0;
-  background-color: #fdf7c3;
-  background-color: #fdf7c3;
-} */
 
 body{
   cursor: url("./assets/among-us.svg"), auto;
-  
+  margin: 0;
+  padding: 0;
 }
 .ff-tc {
   font-family: var(--font-tc);

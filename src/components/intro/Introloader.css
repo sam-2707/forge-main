@@ -1,7 +1,8 @@
 /* Background for the entire section with dots */
 .scroll {
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    max-width: 100%;
     background-color: #ffffff; /* White background */
   }
   
@@ -27,6 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    max-width: 100%;
     /* outline: 2px solid red; */
   }
   .intro-box {
