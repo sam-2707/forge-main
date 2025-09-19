@@ -33,48 +33,97 @@
   padding: 2rem;
 }
 
+/* Responsive text sizing */
+.responsive-text p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
 .hero-cards {
   padding: 3rem 2rem;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   .about-section {
-    padding: 3rem;
+    padding: 2rem 1rem;
     text-align: center;
+    margin-top: 80px;
   }
+  
   .info-text {
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
   }
+  
+  /* Override Tailwind text sizing for mobile */
+  .info-text p {
+    font-size: 16px !important;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
   .hero-cards {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
+  
   .about-title {
     color: white;
-    font-size: 100px;
+    font-size: 48px !important; /* Much smaller for mobile */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
     top: 0;
-    padding-block: 1.5rem;
-    margin-top: 1.5rem;
-    /* outline: 2px solid blue; */
+    padding: 1rem 0;
+    margin: 1rem 0;
+    transform: none; /* Remove rotation on mobile */
+    writing-mode: initial; /* Reset writing mode */
   }
 
   .info-container {
-    min-height: 50vh;
+    min-height: auto;
     padding: 0.5rem;
   }
 
   .about-container {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: auto;
     position: relative;
-    /* padding-bottom: 2rem; */
-
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+  }
+  
+  .about-info {
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 420px) {
+  .about-section {
+    padding: 1.5rem 0.5rem;
+    margin-top: 60px;
+  }
+  
+  .about-title {
+    font-size: 36px !important; /* Even smaller for small phones */
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+  }
+  
+  .info-text p {
+    font-size: 14px !important;
+    padding: 0 0.5rem;
+  }
+  
+  .hero-cards {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .info-container {
+    padding: 0.25rem;
   }
 }
 @media screen and (min-width: 720px) {

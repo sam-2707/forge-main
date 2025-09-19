@@ -8,7 +8,7 @@ export default function About() {
       <div className="about-container ">
         <div className="about-title title ff-tc "> About</div>
         <div className="about-info flex flex-col justify-evenly ">
-          <div className="info-text text-white text-[24px]">
+          <div className="info-text text-white responsive-text">
             <p>
               {" "}
               Welcome to <span className="span-emp">FORGE!</span>, the ultimate
