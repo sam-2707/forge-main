@@ -11,20 +11,23 @@ export default function About() {
           <div className="info-text text-white text-[24px]">
             <p>
               {" "}
-              Welcome to <span className="span-emp">GG!</span>, the ultimate
-              gaming event that will take you on a journey of adventure,
-              excitement, and pure gaming fun! Join us on{" "}
-              <span className="span-emp">November 08th and 09th</span> for two days
-              of non-stop gaming fun, including Hallucinate, where you'll
-              experience mind-bending VR gameplay, Rendezvous, a treasure hunt
-              with a high-tech twist, Flash, a special movie screening of your
-              favorite blockbuster films, and Alt+f4, a gaming tournament that
-              will test your skills and push you to the limit.
+              Welcome to <span className="span-emp">FORGE!</span>, the ultimate
+              gaming experience featuring the spectacular{" "}
+              <span className="span-emp">FORGE X DASTAAN Gaming Tournament 2025</span>!
+              Join us from{" "}
+              <span className="span-emp">October 1st to 12th, 2025</span> for an 
+              electrifying esports showdown in Valorant, Free Fire, and BGMI.
             </p>
             <p>
-              Get ready to immerse yourself in the world of gaming like never
-              before, connect with other passionate gamers, and have the time of
-              your life at GG!
+              Experience online league matches from October 1st-10th, followed by 
+              intense offline semi-finals and finals at Amrita Vishwa Vidyapeetham, 
+              Bengaluru Campus from October 10th-12th. Get ready for high-energy 
+              competition, skill, strategy, and esports passion like never before!
+            </p>
+            <p>
+              Our flagship events including Hallucinate (VR gameplay), Rendezvous 
+              (treasure hunt), Flash (movie screening), and Alt+f4 tournaments 
+              will return next year bigger and better than ever!
             </p>
           </div>
           <div className="hero-cards w-full">

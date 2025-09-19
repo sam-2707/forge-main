@@ -127,3 +127,118 @@ figure img {
     font-size: 15px;
   }
 }
+
+/* DASTAAN Gaming Tournament Styles */
+.dastaan-event {
+  border: 3px solid #00ff88;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 8px 25px rgba(0, 255, 136, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.dastaan-event::before {
+  content: "NEW";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #00ff88;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.dastaan-event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 255, 136, 0.4);
+}
+
+.dastaan-event .article-body {
+  background: rgba(26, 26, 46, 0.95);
+  color: #fff;
+}
+
+.dastaan-event .article-body h2 {
+  color: #00ff88;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dastaan-event .read-more {
+  background: #00ff88;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.dastaan-event .read-more:hover {
+  background: #00cc6a;
+  transform: scale(1.05);
+}
+
+/* Flagship Events Section */
+.flagship-events-section {
+  display: contents; /* This makes the section act as if it's not there, allowing children to participate in parent grid */
+  margin-top: 40px;
+}
+
+.flagship-title {
+  grid-column: 1 / -1; /* Only the title spans full width */
+  text-align: center;
+  font-size: 24px;
+  color: #666;
+  margin: 40px 0 30px 0;
+  padding-top: 30px;
+  border-top: 2px solid #e0e0e0;
+  font-weight: bold;
+}
+
+.flagship-event-greyed {
+  opacity: 0.5;
+  filter: grayscale(70%);
+  position: relative;
+  pointer-events: none;
+}
+
+.flagship-event-greyed::after {
+  content: "Coming Next Year";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.flagship-event-greyed .read-more.disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.flagship-event-greyed:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: none;
+}
+
+/* Mobile responsiveness for flagship events */
+@media (max-width: 768px) {
+  .flagship-title {
+    font-size: 20px;
+    margin: 30px 0 20px 0;
+  }
+  
+  .dastaan-event .article-body h2 {
+    font-size: 14px;
+  }
+}
